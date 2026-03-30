@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Planner Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>📚 Study Planner Dashboard</h1>
+
+  <div class="card">
+    <h3>Add Subject</h3>
+    <input type="text" id="subject" placeholder="Subject">
+    <input type="number" id="hours" placeholder="Hours">
+    <button onclick="addSubject()">Add Subject</button>
+  </div>
+
+  <div class="card">
+    <h3>Subjects List</h3>
+    <ul id="list"></ul>
+    <h3 id="total">📊 Total Hours: 0</h3>
+  </div>
+
+  <div class="card">
+    <h3>Study Plan</h3>
+    <input type="number" id="days" placeholder="Days">
+    <button onclick="calculateDays()">Calculate</button>
+    <h3 id="perDay"></h3>
+  </div>
+
+  <div class="card">
+    <h3>Progress</h3>
+    <input type="number" id="studied" placeholder="Studied Hours">
+    <button onclick="updateProgress()">Update</button>
+
+    <div class="bar">
+      <div id="progressBar" class="progress"></div>
+    </div>
+
+    <h3 id="progressText"></h3>
+    <p id="message"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
